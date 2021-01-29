@@ -1,6 +1,7 @@
 {
   "track_id": "io",
   "language": "Io",
+  "slug": "io",
   "active": false,
   "status": {
     "concept_exercises": false,
