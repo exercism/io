@@ -1,0 +1,14 @@
+mostCommonWord := method(text,
+    counts := Map clone
+    best := ""
+    bestCount := 0
+    text asLowercase split(" ") foreach(word,
+        count := counts at(word, 0) + 1
+        counts atPut(word, count)
+        if(count > bestCount,
+            best = word
+            bestCount = count
+        )
+    )
+    "\"#{best}\" appears #{bestCount} times" interpolate
+)
